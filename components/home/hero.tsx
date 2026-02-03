@@ -145,7 +145,7 @@ export function Hero() {
             transition={{ delay: 0.8 }}
             className="pt-4 flex justify-center"
           >
-            <div className="flex justify-center items-center">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <Link href="/join">
                 <Button
                   borderRadius="2rem"
@@ -156,6 +156,19 @@ export function Hero() {
                 >
                   Join Now
                   <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
+
+              <Link href="https://concurrence.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <Button
+                  borderRadius="2rem"
+                  containerClassName="h-14 w-auto px-0"
+                  className="bg-gradient-to-r from-pink-500/20 to-orange-500/20 border-pink-500/30 px-8 gap-2 text-base font-semibold text-pink-100"
+                  borderClassName="bg-[radial-gradient(#ec4899_40%,transparent_60%)]"
+                  duration={3000}
+                >
+                  Visit Concurrence Website
+                  <Zap className="w-5 h-5 text-yellow-400" />
                 </Button>
               </Link>
             </div>
