@@ -16,6 +16,28 @@ const navLinks = [
 export function GlassNavbar() {
     const [isOpen, setIsOpen] = useState(false);
 
+    const menuRef = React.useRef<HTMLDivElement>(null);
+    const buttonRef = React.useRef<HTMLButtonElement>(null);
+
+    React.useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (
+                isOpen &&
+                menuRef.current &&
+                !menuRef.current.contains(event.target as Node) &&
+                buttonRef.current &&
+                !buttonRef.current.contains(event.target as Node)
+            ) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isOpen]);
+
     return (
         <>
             <motion.header
@@ -75,6 +97,7 @@ export function GlassNavbar() {
                             Join Now
                         </Link>
                         <button
+                            ref={buttonRef}
                             onClick={() => setIsOpen(!isOpen)}
                             className="p-2 rounded-full bg-white/5 border border-white/10"
                         >
@@ -92,10 +115,11 @@ export function GlassNavbar() {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
+                        ref={menuRef}
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="fixed top-20 left-4 right-4 z-40 p-4 rounded-2xl bg-black/90 backdrop-blur-xl border border-white/10 sm:hidden"
+                        className="fixed top-20 left-4 right-4 z-50 p-4 rounded-2xl bg-black/90 backdrop-blur-xl border border-white/10 sm:hidden shadow-2xl"
                     >
                         <div className="flex flex-col gap-2">
                             {navLinks.map((link) => (
