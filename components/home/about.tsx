@@ -176,6 +176,30 @@ export function About() {
                             </div>
                         </motion.div>
                     </div>
+
+                    {/* Student Coordinators - New Row */}
+                    <div className="grid grid-cols-1 mt-4">
+                        <motion.div
+                            initial={{ opacity: 0, y: 10 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.4 }}
+                            className="p-5 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
+                        >
+                            <h4 className="text-[10px] uppercase tracking-[0.2em] text-cyan-400 font-bold mb-4 text-center">Student Coordinators</h4>
+                            <div className="flex flex-wrap justify-center gap-8">
+                                {coordinators.studentCoordinators.map((coord) => (
+                                    <div key={coord.name} className="flex flex-col items-center text-center">
+                                        <span className="text-xs text-white font-bold mb-1">{coord.name}</span>
+                                        <a href={`tel:${coord.phone}`} className="flex items-center gap-1.5 text-[10px] text-white/50 hover:text-cyan-400 transition-colors bg-white/5 px-2 py-1 rounded-full border border-white/5 hover:border-cyan-500/30">
+                                            <Phone className="w-2.5 h-2.5" />
+                                            {coord.phone}
+                                        </a>
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.div>
+                    </div>
                 </div>
 
                 {/* Developer Credits - Moved from Footer */}

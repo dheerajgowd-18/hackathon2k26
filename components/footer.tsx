@@ -93,21 +93,7 @@ export function Footer() {
               </li>
             </ul>
 
-            <h3 className="font-semibold text-white text-sm mt-6 mb-4">Student Coordinators</h3>
-            <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-foreground/40 text-xs">
-                <Phone className="w-3 h-3 text-cyan-400 flex-shrink-0" />
-                <span>Syed Aman: 9966466951</span>
-              </li>
-              <li className="flex items-center gap-2 text-foreground/40 text-xs">
-                <Phone className="w-3 h-3 text-cyan-400 flex-shrink-0" />
-                <span>B.MD.Rafi: 7995399545</span>
-              </li>
-              <li className="flex items-center gap-2 text-foreground/40 text-xs">
-                <Phone className="w-3 h-3 text-cyan-400 flex-shrink-0" />
-                <span>Y. Javya: 6302053116</span>
-              </li>
-            </ul>
+
           </div>
 
           {/* Social */}

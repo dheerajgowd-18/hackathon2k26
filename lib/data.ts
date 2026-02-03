@@ -66,29 +66,29 @@ export const phases: Phase[] = [
     id: "ideatex",
     name: "IdeateX",
     tagline: "Pitch Your Vision",
-    description: "The ideation phase where participants present innovative solutions to real-world problems. Convince our judges with your creativity and vision.",
+    description: "The ideation phase where teams select a problem statement released on the day, research it, and present their solution.",
     icon: "lightbulb",
-    duration: "3 Hours",
+    duration: "1 Hour",
     details: [
-      "Present your innovative idea",
-      "5-minute pitch + 3-minute Q&A",
-      "Focus on problem-solving approach",
-      "Team size: 3-5 members",
+      "Problem statements revealed on spot",
+      "1 hour for research & PPT creation",
+      "Marks awarded (Hidden)",
+      "All teams proceed to CodeJam",
     ],
-    outcome: "Top teams qualify for CodeJam",
+    outcome: "Marks added to final score",
   },
   {
     id: "codejam",
     name: "CodeJam",
     tagline: "Build It Live",
-    description: "The 24-hour coding marathon where qualified teams bring their ideas to life. Code, collaborate, and create a working prototype.",
+    description: "The 24-hour coding marathon where all teams build their prototypes. Final evaluation combines IdeateX and CodeJam scores.",
     icon: "code",
     duration: "24 Hours",
     details: [
-      "Build a working prototype",
+      "All teams participate",
+      "Solve the problem statement",
       "Access to mentors & resources",
-      "Midnight snacks & energy drinks",
-      "Final demo to judges",
+      "Evaluation: IdeateX + CodeJam",
     ],
     outcome: "Winner gets an Internship!",
   },
@@ -209,14 +209,19 @@ export const coordinators = {
     { name: "Dr. M. Sravan Kumar Reddy", title: "Program Convener" },
     { name: "Mr. P. Naveen Sundar Kumar", title: "Program Convener" },
   ],
+  studentCoordinators: [
+    { name: "V. Chaitanya", phone: "8341911844" },
+    { name: "K. Bharath", phone: "8309010972" },
+    { name: "Syed Aman", phone: "9966466951" },
+    { name: "B.MD. Rafi", phone: "7995399545" },
+    { name: "Y. Javya", phone: "6302053116" },
+  ],
 };
 
 // Social Links
 export const socialLinks = [
-  { platform: "instagram", url: "https://instagram.com/rgmcet" },
-  { platform: "twitter", url: "https://twitter.com/rgmcet" },
-  { platform: "linkedin", url: "https://linkedin.com/school/rgmcet" },
-  { platform: "youtube", url: "https://youtube.com/@rgmcet" },
+  { platform: "instagram", url: "https://www.instagram.com/rgmcet09?igsh=MXRhbnF0MnF2ejExZg==" },
+  { platform: "youtube", url: "https://youtube.com/@rgmcet-autonomousnandyala.7374?si=ASiQ5YHTNDvCNixB" },
 ];
 
 // Events for registration (single hackathon event)

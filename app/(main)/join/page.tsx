@@ -38,7 +38,7 @@ export default function JoinPage() {
                             <p className="text-white/60 mb-8">
                                 Access your dashboard, manage your team, and check your status.
                             </p>
-                            <Link href="/login" className="block">
+                            <Link href="https://rgm-hackathon2k26-six.vercel.app/login" className="block">
                                 <Button
                                     borderRadius="1.5rem"
                                     className="w-full bg-cyan-500/20 border-cyan-500/30 hover:bg-cyan-500/30 text-white font-semibold"
@@ -63,7 +63,7 @@ export default function JoinPage() {
                             <p className="text-white/60 mb-8">
                                 Register your team for the hackathon and start your innovation journey.
                             </p>
-                            <Link href="/register" className="block">
+                            <Link href="https://rgm-hackathon2k26-six.vercel.app/register" className="block">
                                 <Button
                                     borderRadius="1.5rem"
                                     className="w-full bg-purple-500/20 border-purple-500/30 hover:bg-purple-500/30 text-white font-semibold"
