@@ -59,20 +59,20 @@ export function GlassNavbar() {
 
                         {/* Register Button */}
                         <Link
-                            href="/register"
+                            href="/join"
                             className="ml-3 px-4 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full hover:from-cyan-400 hover:to-purple-400 transition-all duration-300"
                         >
-                            Register
+                            Join Now
                         </Link>
                     </div>
 
                     {/* Mobile: Register + Menu */}
                     <div className="flex sm:hidden items-center gap-2">
                         <Link
-                            href="/register"
+                            href="/join"
                             className="px-3 py-1.5 text-[10px] font-semibold text-white bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full"
                         >
-                            Register
+                            Join Now
                         </Link>
                         <button
                             onClick={() => setIsOpen(!isOpen)}

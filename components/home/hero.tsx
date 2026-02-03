@@ -146,7 +146,7 @@ export function Hero() {
             className="pt-4 flex justify-center"
           >
             <div className="flex justify-center items-center">
-              <Link href="/register">
+              <Link href="/join">
                 <Button
                   borderRadius="2rem"
                   containerClassName="h-14 w-auto px-0"
@@ -154,7 +154,7 @@ export function Hero() {
                   borderClassName="bg-[radial-gradient(#22d3ee_40%,transparent_60%)]"
                   duration={3000}
                 >
-                  Register Now
+                  Join Now
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
