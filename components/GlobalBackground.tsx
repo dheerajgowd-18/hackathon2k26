@@ -10,7 +10,7 @@ export function GlobalBackground() {
         <FloatingLines
           linesGradient={["#06b6d4", "#3b82f6", "#8b5cf6", "#ec4899"]}
           enabledWaves={["top", "middle", "bottom"]}
-          lineCount={[4, 6, 4]}
+          lineCount={[3, 4, 3]}
           lineDistance={[8, 6, 10]}
           animationSpeed={0.8}
           interactive={true}

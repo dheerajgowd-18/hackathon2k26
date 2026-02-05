@@ -211,9 +211,9 @@ export const coordinators = {
     { name: "Mr. P. Naveen Sundar Kumar", title: "Program Convener" },
   ],
   studentCoordinators: [
-    { name: "V. Chaitanya", phone: "8341911844" },
-    { name: "K. Bharath", phone: "8309010972" },
     { name: "Syed Aman", phone: "9966466951" },
+    { name: "K. Bharath", phone: "8309010972" },
+    { name: "V. Chaitanya", phone: "8341911844" },
     { name: "B.MD. Rafi", phone: "7995399545" },
     { name: "Y. Javya", phone: "6302053116" },
   ],

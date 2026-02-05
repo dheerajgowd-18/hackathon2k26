@@ -108,7 +108,9 @@ export function Gallery() {
                                                 src={src}
                                                 alt={`Hackathon Moment ${index + 1}`}
                                                 fill
+                                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw"
                                                 className="object-cover"
+                                                priority={index === 0}
                                             />
                                             {/* Overlay for non-active slides */}
                                             {position !== 0 && <div className="absolute inset-0 bg-black/50" />}
@@ -134,7 +136,9 @@ export function Gallery() {
                                     src={images[currentIndex]}
                                     alt={`Hackathon Moment ${currentIndex + 1}`}
                                     fill
+                                    sizes="(max-width: 640px) 100vw, 50vw"
                                     className="object-cover"
+                                    priority
                                 />
                                 <div className="absolute bottom-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs text-white/80 border border-white/10 flex items-center gap-2">
                                     <Camera className="w-3 h-3 text-cyan-400" />
