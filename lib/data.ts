@@ -123,22 +123,22 @@ export const judges: Judge[] = [
 export const prizes: Prize[] = [
   {
     position: "winner",
-    title: "₹25,000 + TensorFlow Internship",
-    description: "Grand prize of ₹25,000 cash plus a paid internship opportunity at TensorFlow for the winning team. Best performers get internship offers!",
+    title: "₹25,000 + Internship",
+    description: "Grand prize of ₹25,000 cash plus a paid internship opportunity for the winning team. Best performers get internship offers!",
     icon: "trophy",
     highlight: true,
   },
   {
     position: "runner-up",
-    title: "₹15,000 + TensorFlow Internship",
-    description: "₹15,000 cash prize plus a paid internship opportunity at TensorFlow for the runner-up team.",
+    title: "₹15,000 + Internship",
+    description: "₹15,000 cash prize plus a paid internship opportunity for the runner-up team.",
     icon: "medal",
     highlight: true,
   },
   {
     position: "third",
-    title: "₹10,000 + TensorFlow Internship",
-    description: "₹10,000 cash prize plus a paid internship opportunity at TensorFlow for the third place team.",
+    title: "₹10,000 + Internship",
+    description: "₹10,000 cash prize plus a paid internship opportunity for the third place team.",
     icon: "award",
     highlight: true,
   },
