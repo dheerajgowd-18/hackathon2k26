@@ -23,7 +23,7 @@ export default function JoinPage() {
                     </p>
                 </motion.div>
 
-                <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12">
                     {/* Login Option */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -41,7 +41,7 @@ export default function JoinPage() {
                             <Link href="https://rgm-hackathon2k26-six.vercel.app/login" className="block">
                                 <Button
                                     borderRadius="1.5rem"
-                                    className="w-full bg-cyan-500/20 border-cyan-500/30 hover:bg-cyan-500/30 text-white font-semibold"
+                                    className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 border-cyan-400/50 hover:from-cyan-400 hover:to-blue-400 text-white font-bold shadow-[0_0_20px_rgba(6,182,212,0.3)] transition-all"
                                 >
                                     Student Login <ArrowRight className="ml-2 w-4 h-4" />
                                 </Button>
@@ -66,7 +66,7 @@ export default function JoinPage() {
                             <Link href="https://rgm-hackathon2k26-six.vercel.app/register" className="block">
                                 <Button
                                     borderRadius="1.5rem"
-                                    className="w-full bg-purple-500/20 border-purple-500/30 hover:bg-purple-500/30 text-white font-semibold"
+                                    className="w-full bg-gradient-to-r from-purple-500 to-pink-500 border-purple-400/50 hover:from-purple-400 hover:to-pink-400 text-white font-bold shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all"
                                 >
                                     Register Now <ArrowRight className="ml-2 w-4 h-4" />
                                 </Button>
@@ -74,6 +74,52 @@ export default function JoinPage() {
                         </div>
                     </motion.div>
                 </div>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4, duration: 0.5 }}
+                    className="max-w-3xl mx-auto space-y-6"
+                >
+                    {/* Important Guideline */}
+                    <div className="p-4 rounded-xl bg-blue-500/10 border border-blue-500/20 backdrop-blur-sm flex items-start gap-4">
+                        <div className="p-2 rounded-full bg-blue-500/20 text-blue-400 mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></svg>
+                        </div>
+                        <div>
+                            <h3 className="text-lg font-bold text-white mb-1">Important Guideline</h3>
+                            <p className="text-white/80 text-sm">
+                                If you are using a mobile phone, please turn on <span className="text-blue-400 font-semibold">"Desktop Site"</span> mode in your browser settings for easy registration.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Troubleshooting (Simple English) */}
+                    <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                        <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                            ⚠️ Having Trouble Registering?
+                        </h3>
+                        <div className="space-y-4 text-white/80 text-sm sm:text-base">
+                            <p className="font-medium text-white/90">
+                                If the registration page is not working properly, try these simple steps:
+                            </p>
+                            <ul className="list-disc pl-5 space-y-2 marker:text-red-400">
+                                <li>
+                                    <span className="text-white font-semibold">Close and Reopen:</span> Close the website tab completely and open it again.
+                                </li>
+                                <li>
+                                    <span className="text-white font-semibold">Use Another Browser:</span> Try opening the link in a different browser (like Chrome, Edge, or Firefox).
+                                </li>
+                                <li>
+                                    <span className="text-white font-semibold">Change Device:</span> If possible, try registering from a laptop or a different mobile phone.
+                                </li>
+                                <li className="pt-2 border-t border-white/10">
+                                    <span className="text-white font-semibold">Still not working?</span> Please contact the student coordinators for help.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </motion.div>
             </div>
         </div>
     );
