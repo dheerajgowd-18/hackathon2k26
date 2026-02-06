@@ -116,7 +116,7 @@ export function PrizesSection() {
                         Top 3 teams receive internship opportunities + cash prizes
                     </p>
                     <p className="text-cyan-400/60 text-[11px]">
-                        🎓 All participants receive a certificate of participation
+                        🎓 All participants receive a certificate of participation and swags
                     </p>
                 </motion.div>
             </div>

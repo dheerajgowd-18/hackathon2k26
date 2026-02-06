@@ -89,9 +89,10 @@ export const phases: Phase[] = [
       "Solve the problem statement",
       "Access to mentors & resources",
       "Evaluation: IdeateX + CodeJam",
-      "Internships by TensorFlow for Top Teams",
+      "Internships for Top Teams",
+      "Participation certificates and swags for all",
     ],
-    outcome: "Internships provided by TensorFlow",
+    outcome: "Internship opportunities",
   },
 ];
 
@@ -240,4 +241,13 @@ export const events: Event[] = [
     name: "TechSprint 2K26",
     registrationFee: techSprintInfo.registrationFee,
   },
+];
+
+export const sponsors = [
+  {
+    name: "GeeksforGeeks",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg",
+    link: "https://www.geeksforgeeks.org/",
+    tier: "Education Partner"
+  }
 ];
