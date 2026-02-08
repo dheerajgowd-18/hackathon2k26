@@ -21,7 +21,7 @@ export function SponsorsSection() {
                         <span className="text-xs uppercase tracking-widest text-cyan-400/80 font-medium">Our Partners</span>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white/80 to-white/60">
-                        Official Sponsors
+                        In Collaboration With
                     </h2>
                 </motion.div>
 
