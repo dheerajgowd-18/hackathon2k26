@@ -40,8 +40,10 @@ export default function JoinPage() {
                             </p>
                             <Link href="https://rgm-hackathon2k26-six.vercel.app/login" className="block">
                                 <Button
-                                    borderRadius="1.5rem"
-                                    className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 border-cyan-400/50 hover:from-cyan-400 hover:to-blue-400 text-white font-bold shadow-[0_0_20px_rgba(6,182,212,0.3)] transition-all"
+                                    borderRadius="1.75rem"
+                                    className="w-full bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border-cyan-500/30 text-white font-bold shadow-[0_0_20px_rgba(6,182,212,0.1)] transition-all"
+                                    borderClassName="bg-[radial-gradient(#22d3ee_40%,transparent_60%)]"
+                                    duration={3000}
                                 >
                                     Student Login <ArrowRight className="ml-2 w-4 h-4" />
                                 </Button>
@@ -63,10 +65,18 @@ export default function JoinPage() {
                             <p className="text-white/60 mb-8">
                                 Register your team for the hackathon and start your innovation journey.
                             </p>
+                            <div className="mb-8 flex justify-center sm:justify-start">
+                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20">
+                                    <span className="text-purple-400 font-bold">₹800</span>
+                                    <span className="text-purple-300/60 text-sm">per person</span>
+                                </div>
+                            </div>
                             <Link href="https://rgm-hackathon2k26-six.vercel.app/register" className="block">
                                 <Button
-                                    borderRadius="1.5rem"
-                                    className="w-full bg-gradient-to-r from-purple-500 to-pink-500 border-purple-400/50 hover:from-purple-400 hover:to-pink-400 text-white font-bold shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all"
+                                    borderRadius="1.75rem"
+                                    className="w-full bg-gradient-to-r from-pink-500/20 to-orange-500/20 border-pink-500/30 text-white font-bold shadow-[0_0_20px_rgba(236,72,153,0.1)] transition-all"
+                                    borderClassName="bg-[radial-gradient(#ec4899_40%,transparent_60%)]"
+                                    duration={3000}
                                 >
                                     Register Now <ArrowRight className="ml-2 w-4 h-4" />
                                 </Button>
@@ -120,7 +130,7 @@ export default function JoinPage() {
                         </div>
                     </div>
                 </motion.div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 }

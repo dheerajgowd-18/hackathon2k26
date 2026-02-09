@@ -42,7 +42,7 @@ export const techSprintInfo = {
   },
   venue: "RGM College of Engineering & Technology",
   duration: "24 Hours",
-  registrationFee: 200,
+  registrationFee: 800,
 };
 
 // College Info
