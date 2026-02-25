@@ -38,13 +38,12 @@ export default function JoinPage() {
                             <p className="text-white/60 mb-8">
                                 Access your dashboard, manage your team, and check your status.
                             </p>
-                            <Link href="https://rgm-hackathon2k26-six.vercel.app/login" className="block">
-                                <Button
-                                    className="w-full h-12 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold shadow-lg shadow-cyan-500/20 transition-all rounded-full text-base"
-                                >
-                                    Student Login <ArrowRight className="ml-2 w-4 h-4" />
-                                </Button>
-                            </Link>
+                            <Button
+                                disabled
+                                className="w-full h-12 bg-gray-600 text-white/50 font-bold rounded-full text-base cursor-not-allowed opacity-60"
+                            >
+                                Student Login <ArrowRight className="ml-2 w-4 h-4" />
+                            </Button>
                         </div>
                     </motion.div>
 
