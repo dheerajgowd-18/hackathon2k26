@@ -59,22 +59,22 @@ export default function JoinPage() {
                                 <UserPlus className="w-8 h-8 text-purple-400" />
                             </div>
                             <h2 className="text-2xl font-bold mb-4 text-white">New Registration</h2>
-                            <p className="text-white/60 mb-8">
+                            <p className="text-white/60 mb-4">
                                 Register your team for the hackathon and start your innovation journey.
                             </p>
-                            <div className="mb-8 flex justify-center sm:justify-start">
-                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20">
-                                    <span className="text-purple-400 font-bold">₹800</span>
-                                    <span className="text-purple-300/60 text-sm">per person</span>
-                                </div>
+                            <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20">
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                                </span>
+                                <span className="text-red-400 font-semibold text-sm">Registrations Closed</span>
                             </div>
-                            <Link href="https://rgm-hackathon2k26-six.vercel.app/register" className="block">
-                                <Button
-                                    className="w-full h-12 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold shadow-lg shadow-purple-500/20 transition-all rounded-full text-base"
-                                >
-                                    Register Now <ArrowRight className="ml-2 w-4 h-4" />
-                                </Button>
-                            </Link>
+                            <Button
+                                disabled
+                                className="w-full h-12 bg-gray-600 text-white/50 font-bold rounded-full text-base cursor-not-allowed opacity-60"
+                            >
+                                Register Now <ArrowRight className="ml-2 w-4 h-4" />
+                            </Button>
                         </div>
                     </motion.div>
                 </div>
@@ -100,52 +100,6 @@ export default function JoinPage() {
                             <ArrowRight className="w-5 h-5 text-green-400 group-hover:translate-x-1 transition-transform" />
                         </div>
                     </Link>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4, duration: 0.5 }}
-                    className="max-w-3xl mx-auto space-y-6"
-                >
-                    {/* Important Guideline */}
-                    <div className="p-4 rounded-xl bg-blue-500/10 border border-blue-500/20 backdrop-blur-sm flex items-start gap-4">
-                        <div className="p-2 rounded-full bg-blue-500/20 text-blue-400 mt-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></svg>
-                        </div>
-                        <div>
-                            <h3 className="text-lg font-bold text-white mb-1">Important Guideline</h3>
-                            <p className="text-white/80 text-sm">
-                                If you are using a mobile phone, please turn on <span className="text-blue-400 font-semibold">"Desktop Site"</span> mode in your browser settings for easy registration.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Troubleshooting (Simple English) */}
-                    <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                        <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                            ⚠️ Having Trouble Registering?
-                        </h3>
-                        <div className="space-y-4 text-white/80 text-sm sm:text-base">
-                            <p className="font-medium text-white/90">
-                                If the registration page is not working properly, try these simple steps:
-                            </p>
-                            <ul className="list-disc pl-5 space-y-2 marker:text-red-400">
-                                <li>
-                                    <span className="text-white font-semibold">Close and Reopen:</span> Close the website tab completely and open it again.
-                                </li>
-                                <li>
-                                    <span className="text-white font-semibold">Use Another Browser:</span> Try opening the link in a different browser (like Chrome, Edge, or Firefox).
-                                </li>
-                                <li>
-                                    <span className="text-white font-semibold">Change Device:</span> If possible, try registering from a laptop or a different mobile phone.
-                                </li>
-                                <li className="pt-2 border-t border-white/10">
-                                    <span className="text-white font-semibold">Still not working?</span> Please contact the student coordinators for help.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </motion.div>
             </div >
         </div >

@@ -138,40 +138,33 @@ export function Hero() {
             <span className="text-white/30 text-sm hidden sm:inline">2026</span>
           </motion.div>
 
-          {/* CTA Button */}
+          {/* Registrations Closed Banner */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
-            className="pt-4 flex justify-center"
+            className="pt-4 flex flex-col items-center gap-4"
           >
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-              <Link href="/join">
-                <Button
-                  borderRadius="2rem"
-                  containerClassName="h-14 w-auto px-0"
-                  className="bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border-cyan-500/30 px-8 gap-2 text-base font-semibold"
-                  borderClassName="bg-[radial-gradient(#22d3ee_40%,transparent_60%)]"
-                  duration={3000}
-                >
-                  Join Now
-                  <ArrowRight className="w-5 h-5" />
-                </Button>
-              </Link>
-
-              <Link href="https://concurrence.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <Button
-                  borderRadius="2rem"
-                  containerClassName="h-14 w-auto px-0"
-                  className="bg-gradient-to-r from-pink-500/20 to-orange-500/20 border-pink-500/30 px-8 gap-2 text-base font-semibold text-pink-100"
-                  borderClassName="bg-[radial-gradient(#ec4899_40%,transparent_60%)]"
-                  duration={3000}
-                >
-                  Visit Concurrence Website
-                  <Zap className="w-5 h-5 text-yellow-400" />
-                </Button>
-              </Link>
+            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-red-500/15 border border-red-500/30 backdrop-blur-sm">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span>
+              </span>
+              <span className="text-sm sm:text-base font-bold text-red-400 uppercase tracking-wider">Registrations Closed</span>
             </div>
+
+            <Link href="https://concurrence.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <Button
+                borderRadius="2rem"
+                containerClassName="h-14 w-auto px-0"
+                className="bg-gradient-to-r from-pink-500/20 to-orange-500/20 border-pink-500/30 px-8 gap-2 text-base font-semibold text-pink-100"
+                borderClassName="bg-[radial-gradient(#ec4899_40%,transparent_60%)]"
+                duration={3000}
+              >
+                Visit Concurrence Website
+                <Zap className="w-5 h-5 text-yellow-400" />
+              </Button>
+            </Link>
           </motion.div>
 
         </motion.div>
